@@ -176,6 +176,7 @@ Example Request
 The response to this request will contain either, data relating to the product with the unique identifier 1234 or, a 404 error if the unique identifier does not exist.
 
 Example Responses
+- Successful Request
 
     <response>
       <ID>10000</ID>
@@ -226,7 +227,9 @@ Example Responses
         <item>//www.experee.com/media/WhiskyTasting.jpg</item>
       </media>
     </response>
-    
+
+- Unsuccessful Request
+
     <response>
       <name>Not Found</name>
       <message/>
