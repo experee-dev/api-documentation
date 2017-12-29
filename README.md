@@ -235,3 +235,19 @@ Example Responses
       <status>404</status>
       <type>yii\web\NotFoundHttpException</type>
     </response>
+
+
+Entities
+--
+
+Price
+
+- `tier_name` (String) The name of this pricing tier; Adult, Child, Per Person etc.
+- `guests` (Integer) The number of people a single purchase of this price tier would provide.
+- `advertised_tier` (String) (true or fale) Should this tier be used in calculating 'from price'?
+- `price_as_decimal` (Float) The numerical representation of the price for this pricing tier. Useful for calculation of multiple purchases etc.
+- `currency` (String) The [ISO currency code](https://en.wikipedia.org/wiki/ISO_4217) for the currency this pricing tier is baselined in.
+- `price_string` (String) A representation of the symbol of the currency this pricing tier is baselined in and the numerical part of this pricing tier. Useful for display purposes.
+- `description` (String - optional) A more detailed description of this pricing tier. May include restrictions according to age etc.
+- `from_age` (Integer - optional) A lower limit for age restrictions for this pricing tier.
+- `to_age` (Integer - optional) An upper limit for age restrictions for this pricing tier.
