@@ -11,25 +11,25 @@ https://api.experee.com/v2/endpoint?access-token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 the access token is used to authenticate your requests; if this authentication fails the response you receive will have a status field with the status code of 401. If you receive a response like this, please double check your access-token matches what you were provided when api access was granted.
 
-<response>
+    <response>
 	<name>Unauthorized</name>
 	<message>Your request was made with invalid credentials.</message>
 	<code>0</code>
 	<status>401</status>
 	<type>yii\web\UnauthorizedHttpException</type>
-</response>
+    </response>
 
 Request Rate Limiting
 --
 requests are limited to 4 per second. if your application exceeds this limit the response you receive will have a status field with the status code 429. If you receive a response like this, you must wait until your request allowance is again sufficient and then re-make your request.
 
-<response>
+    <response>
 	<name>Too Many Requests</name>
 	<message>Rate limit exceeded.</message>
 	<code>0</code>
 	<status>429</status>
 	<type>yii\web\TooManyRequestsHttpException</type>
-</response>
+    </response>
 
 Other Response Fields
 --
@@ -72,7 +72,7 @@ This response to the request will contain a collection of 20 products which are 
 
 Example Response
 
-<response>
+    <response>
 	<products>
 		<item>
 			<ID>10000</ID>
@@ -157,7 +157,7 @@ Example Response
 		<currentPage>3</currentPage>
 		<perPage>20</perPage>
 	</_meta>
-</response>
+    </response>
 
 --
 /products/{id}
