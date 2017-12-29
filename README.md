@@ -256,27 +256,28 @@ A `product` entity consists of the following attributes.
 
 The `prices` field is made up of one or more `price` entities, grouped together as items and consisting of the following attributes where some are marked as optional.
 
-- `tier_name` (String) The name of this pricing tier; Adult, Child, Per Person etc.
-- `guests` (Integer) The number of people a single purchase of this price tier would provide.
-- `advertised_tier` (String) (true or fale) Should this tier be used in calculating 'from price'?
-- `price_as_decimal` (Float) The numerical representation of the price for this pricing tier. Useful for calculation of multiple purchases etc.
-- `currency` (String) The [ISO currency code](https://en.wikipedia.org/wiki/ISO_4217) for the currency this pricing tier is baselined in.
-- `price_string` (String) A representation of the symbol of the currency this pricing tier is baselined in and the numerical part of this pricing tier. Useful for display purposes.
-- `description` (String - optional) A more detailed description of this pricing tier. May include restrictions according to age etc.
-- `from_age` (Integer - optional) A lower limit for age restrictions for this pricing tier.
-- `to_age` (Integer - optional) An upper limit for age restrictions for this pricing tier.
+- `tier_name` (`String`) The name of this pricing tier; Adult, Child, Per Person etc.
+- `guests` (`Integer`) The number of people a single purchase of this price tier would provide.
+- `advertised_tier` (`String`) (`true` or `fale`) Should this tier be used in calculating 'from price'?
+- `price_as_decimal` (`Float`) The numerical representation of the price for this pricing tier. Useful for calculation of multiple purchases etc.
+- `currency` (`String`) The [ISO currency code](https://en.wikipedia.org/wiki/ISO_4217) for the currency this pricing tier is baselined in.
+- `price_string` (`String`) A representation of the symbol of the currency this pricing tier is baselined in and the numerical part of this pricing tier. Useful for display purposes.
+- `description` (`String` - optional) A more detailed description of this pricing tier. May include restrictions according to age etc.
+- `from_age` (`Integer` - optional) A lower limit for age restrictions for this pricing tier.
+- `to_age` (`Integer` - optional) An upper limit for age restrictions for this pricing tier.
 
 `Product Duration`
 
 the `product_duration` entity consists of the following attributes.
-- `unit` (String) The type of unit the `duration` field is counting. This can be either `seconds` (for products with a duration of less than a day) or `days` (for products with a duration of a day or more).
+- `unit` (`String`) The type of unit the `duration` field is counting. This can be either `seconds` (for products with a duration of less than a day) or `days` (for products with a duration of a day or more).
+- `duration` (`Integer`) The number of `unit`s which make up amount to the product's duration.
 
 `Location`
 
 The `location` consists of the following attributes.
 
-- `timezone` (String) The name of the [timezone](https://en.wikipedia.org/wiki/Tz_database) the product is situated in, in the form `Area/Location`, for example `Europe/London`.
-- `latitude` (Float) The latitude of the product.
-- `longitude` (Float) The longitude of the product.
-- `town_city` (String) The name of the town or city the product is situated in.
-- `country` (String) The [ISO two-letter country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) of the country the product is situated in.
+- `timezone` (`String`) The name of the [timezone](https://en.wikipedia.org/wiki/Tz_database) the product is situated in, in the form `Area/Location`, for example `Europe/London`.
+- `latitude` (`Float`) The latitude of the product.
+- `longitude` (`Float`) The longitude of the product.
+- `town_city` (`String`) The name of the town or city the product is situated in.
+- `country` (`String`) The [ISO two-letter country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) of the country the product is situated in.
