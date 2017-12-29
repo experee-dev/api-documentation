@@ -57,6 +57,7 @@ A response to a successful request to a 'list entities' (eg Products) style endp
 Available Endpoints
 --
 `/products`
+--
 
 List products, get data for a predetermined number of products from the Experee catalogue. The response from this endpoint can be paginated and (optionally) filtered by country and vary in the number of results returned.
 
@@ -162,7 +163,7 @@ Example Response
 
 
 `/products/{id}`
-
+--
 Get data for a single product.
 
 Mandatory GET Arguments
