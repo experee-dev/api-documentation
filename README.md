@@ -186,24 +186,24 @@ Example Responses
       <fact3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</fact3>
       <prices>
         <item>
-	  <tier_name>Adult</tier_name>
-	  <guests>1</guests>
-	  <advertised_tier>true</advertised_tier>
-	  <price_as_decimal>199.00</price_as_decimal>
-	  <currency>GBP</currency>
-	  <price_string>£199.00</price_string>
-	</item>
-	<item>
-	  <tier_name>Child</tier_name>
-	  <guests>1</guests>
-	  <advertised_tier>false</advertised_tier>
-	  <price_as_decimal>149.00</price_as_decimal>
-	  <currency>GBP</currency>
-	  <price_string>£149.00</price_string>
-	  <description>Special child price</description>
-	  <from_age>4</from_age>
-	  <to_age>16</to_age>
-	</item>
+          <tier_name>Adult</tier_name>
+          <guests>1</guests>
+          <advertised_tier>true</advertised_tier>
+          <price_as_decimal>199.00</price_as_decimal>
+          <currency>GBP</currency>
+          <price_string>£199.00</price_string>
+        </item>
+        <item>
+          <tier_name>Child</tier_name>
+          <guests>1</guests>
+          <advertised_tier>false</advertised_tier>
+          <price_as_decimal>149.00</price_as_decimal>
+          <currency>GBP</currency>
+          <price_string>£149.00</price_string>
+          <description>Special child price</description>
+          <from_age>4</from_age>
+          <to_age>16</to_age>
+        </item>
       </prices>
       <product_duration>
         <unit>seconds</unit>
@@ -213,20 +213,20 @@ Example Responses
       <last_updated>1448381328</last_updated>
       <location>
         <timezone>Europe/London</timezone>
-	<latitude>55.94976491</latitude>
-	<longitude>-3.19076657</longitude>
-	<town_city>Edinburgh</town_city>
-	<country>GB</country>
+        <latitude>55.94976491</latitude>
+        <longitude>-3.19076657</longitude>
+        <town_city>Edinburgh</town_city>
+        <country>GB</country>
       </location>
       <media>
         <item>//www.experee.com/media/EileanDonanCastle1.jpg</item>
-	<item>//www.experee.com/media/Cuillin-Mountains.jpg</item>
-	<item>//www.experee.com/media/Urquhart-Castle1.jpg</item>
-	<item>//www.experee.com/media/cullodenstock1.jpg</item>
-	<item>//www.experee.com/media/WhiskyTasting.jpg</item>
+        <item>//www.experee.com/media/Cuillin-Mountains.jpg</item>
+        <item>//www.experee.com/media/Urquhart-Castle1.jpg</item>
+        <item>//www.experee.com/media/cullodenstock1.jpg</item>
+        <item>//www.experee.com/media/WhiskyTasting.jpg</item>
       </media>
     </response>
-
+    
     <response>
       <name>Not Found</name>
       <message/>
