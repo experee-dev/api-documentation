@@ -5,11 +5,13 @@ The base url for all requests is https://api.experee.com/v2 and data received in
 
 Mandatory Arguments
 --
-access-token. The access token you were provided when api access was granted. this should be passed to every request in the form of a GET argument, for example
+`access-token`. The value of this argument should be the access token you were provided when api access was granted. This should be passed to every request in the form of a GET argument, for example
 
 https://api.experee.com/v2/endpoint?access-token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-the access token is used to authenticate your requests; if this authentication fails the response you receive will have a status field with the status code of 401. If you receive a response like this, please double check your access-token matches what you were provided when api access was granted.
+The access token is used to authenticate your requests; if this authentication fails the response you receive will have a `status` field with the status code of `401`.
+
+If you receive a response like this, please double check your access-token matches what you were provided when api access was granted.
 
     <response>
        <name>Unauthorized</name>
@@ -21,7 +23,9 @@ the access token is used to authenticate your requests; if this authentication f
 
 Request Rate Limiting
 --
-requests are limited to 4 per second. if your application exceeds this limit the response you receive will have a status field with the status code 429. If you receive a response like this, you must wait until your request allowance is again sufficient and then re-make your request.
+Requests are limited to 4 per second. if your application exceeds this limit the response you receive will have a `status` field with the status code `429`.
+
+If you receive a response like this, you must wait until your request allowance is again sufficient and then re-make your request.
 
     <response>
        <name>Too Many Requests</name>
@@ -54,7 +58,7 @@ Available Endpoints
 --
 `/products`
 
-List products, get data for a predetermined number of products from the experee catalogue. the response from this endpoint can be paginated and (optionally) filtered by country.
+List products, get data for a predetermined number of products from the Experee catalogue. The response from this endpoint can be paginated and (optionally) filtered by country and vary in the number of results returned.
 
 Optional GET Arguments
 
@@ -161,7 +165,7 @@ Example Response
 
 Get data for a single product.
 
-Mandatory get arguments
+Mandatory GET Arguments
 
 - `id` - an integer representing the unique identifier for a particular product.
 
@@ -173,32 +177,32 @@ The response to this request will contain either, data relating to the product w
 Example Responses
 
     <response>
-	  <ID>10000</ID>
-	  <name>Test Product Name</name>
-	  <description>Description of product. Can potentially contain html.</description>
-	  <fact1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</fact1>
-	  <fact2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</fact2>
-	  <fact3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</fact3>
-	  <prices>
-		<item>
-		  <tier_name>Adult</tier_name>
-		  <guests>1</guests>
-		  <advertised_tier>true</advertised_tier>
-		  <price_as_decimal>199.00</price_as_decimal>
-		  <currency>GBP</currency>
-		  <price_string>£199.00</price_string>
-	    </item>
-		<item>
-		  <tier_name>Child</tier_name>
-		  <guests>1</guests>
-		  <advertised_tier>false</advertised_tier>
-		  <price_as_decimal>149.00</price_as_decimal>
-		  <currency>GBP</currency>
-		  <price_string>£149.00</price_string>
-		  <description>Special child price</description>
-		  <from_age>4</from_age>
-		  <to_age>16</to_age>
-		</item>
+      <ID>10000</ID>
+      <name>Test Product Name</name>
+      <description>Description of product. Can potentially contain html.</description>
+      <fact1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</fact1>
+      <fact2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</fact2>
+      <fact3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</fact3>
+      <prices>
+        <item>
+	  <tier_name>Adult</tier_name>
+	  <guests>1</guests>
+	  <advertised_tier>true</advertised_tier>
+	  <price_as_decimal>199.00</price_as_decimal>
+	  <currency>GBP</currency>
+	  <price_string>£199.00</price_string>
+	</item>
+	<item>
+	  <tier_name>Child</tier_name>
+	  <guests>1</guests>
+	  <advertised_tier>false</advertised_tier>
+	  <price_as_decimal>149.00</price_as_decimal>
+	  <currency>GBP</currency>
+	  <price_string>£149.00</price_string>
+	  <description>Special child price</description>
+	  <from_age>4</from_age>
+	  <to_age>16</to_age>
+	</item>
       </prices>
       <product_duration>
         <unit>seconds</unit>
@@ -208,24 +212,24 @@ Example Responses
       <last_updated>1448381328</last_updated>
       <location>
         <timezone>Europe/London</timezone>
-		<latitude>55.94976491</latitude>
-		<longitude>-3.19076657</longitude>
-		<town_city>Edinburgh</town_city>
-		<country>GB</country>
-	  </location>
-	  <media>
-		<item>//www.experee.com/media/EileanDonanCastle1.jpg</item>
-		<item>//www.experee.com/media/Cuillin-Mountains.jpg</item>
-		<item>//www.experee.com/media/Urquhart-Castle1.jpg</item>
-		<item>//www.experee.com/media/cullodenstock1.jpg</item>
-		<item>//www.experee.com/media/WhiskyTasting.jpg</item>
-	  </media>
+	<latitude>55.94976491</latitude>
+	<longitude>-3.19076657</longitude>
+	<town_city>Edinburgh</town_city>
+	<country>GB</country>
+      </location>
+      <media>
+        <item>//www.experee.com/media/EileanDonanCastle1.jpg</item>
+	<item>//www.experee.com/media/Cuillin-Mountains.jpg</item>
+	<item>//www.experee.com/media/Urquhart-Castle1.jpg</item>
+	<item>//www.experee.com/media/cullodenstock1.jpg</item>
+	<item>//www.experee.com/media/WhiskyTasting.jpg</item>
+      </media>
     </response>
 
     <response>
-	  <name>Not Found</name>
-	  <message/>
-	  <code>0</code>
-	  <status>404</status>
-	  <type>yii\web\NotFoundHttpException</type>
+      <name>Not Found</name>
+      <message/>
+      <code>0</code>
+      <status>404</status>
+      <type>yii\web\NotFoundHttpException</type>
     </response>
