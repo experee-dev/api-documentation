@@ -12,11 +12,11 @@ https://api.experee.com/v2/endpoint?access-token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 the access token is used to authenticate your requests; if this authentication fails the response you receive will have a status field with the status code of 401. If you receive a response like this, please double check your access-token matches what you were provided when api access was granted.
 
     <response>
-	<name>Unauthorized</name>
-	<message>Your request was made with invalid credentials.</message>
-	<code>0</code>
-	<status>401</status>
-	<type>yii\web\UnauthorizedHttpException</type>
+       <name>Unauthorized</name>
+       <message>Your request was made with invalid credentials.</message>
+       <code>0</code>
+       <status>401</status>
+       <type>yii\web\UnauthorizedHttpException</type>
     </response>
 
 Request Rate Limiting
