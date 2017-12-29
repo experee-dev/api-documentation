@@ -1,7 +1,7 @@
 Experee Public Facing API v2.
 --
 
-The base url for all requests is https://api.experee.com/v2 and data received in response to a request can be formatted in xml or json by sending the appropriate Accept header with your request; namely 'Accept:application/xml' or 'Accept:application/json'.
+The base url for all requests is https://api.experee.com/v2 and data received in response to a request can be formatted in xml or json by sending the appropriate Accept header with your request; namely `'Accept:application/xml'` or `'Accept:application/json'`.
 
 Mandatory Arguments
 --
