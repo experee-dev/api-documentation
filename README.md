@@ -24,11 +24,11 @@ Request Rate Limiting
 requests are limited to 4 per second. if your application exceeds this limit the response you receive will have a status field with the status code 429. If you receive a response like this, you must wait until your request allowance is again sufficient and then re-make your request.
 
     <response>
-	<name>Too Many Requests</name>
-	<message>Rate limit exceeded.</message>
-	<code>0</code>
-	<status>429</status>
-	<type>yii\web\TooManyRequestsHttpException</type>
+       <name>Too Many Requests</name>
+       <message>Rate limit exceeded.</message>
+       <code>0</code>
+       <status>429</status>
+       <type>yii\web\TooManyRequestsHttpException</type>
     </response>
 
 Other Response Fields
