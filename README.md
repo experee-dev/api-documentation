@@ -245,9 +245,11 @@ A `product` entity consists of the following attributes.
 - `ID` (`Integer`) The unique identifier of a particular product.
 - `name` (`String`) The name of a particular product.
 - `description` (`String`) The description of a particular product. This may contain html or markdown.
+- `fact[1-5]` (`String`) (optional) A short fact about the product; up to five facts per product.
+- `useful_information` (`String`) (optional) Other useful information regarding the product.
 - `prices` (`Price`) A collection of one or more price entities (see below).
 - `product_duration` (`Product Duration`) A compound entity which describes the duration of a particular product (see below).
-- `permalink` (`String`) The protocol agnostic url to a particular product on the main Experee.com website.
+- `permalink` (`String`) The url to a particular product on the main Experee.com website.
 - `last_updated` (`Integer`) The unix timestamp for the last time a particular product was updated on the Experee.com system.
 - `location` (`Location`) A compound entity which describes the location and address of a particular product.
 - `media` (`String`) A collection of urls for the full size images associated with a particular product.
