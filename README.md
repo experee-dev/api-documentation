@@ -269,10 +269,19 @@ Example Responses
       <redeemed>false</redeemed>
       <product>Descent and Discover Edinburgh, Self Guided Tour</product>
       <permalink>
-        http://experee-yii.gexp/united-kingdom/edinburgh/tours/descent-and-discover-edinburgh-self-guided-tour
+        https://www.experee.com/united-kingdom/edinburgh/tours/descent-and-discover-edinburgh-self-guided-tour
       </permalink>
     </response>
 
+    <response>
+      <name>Not Found</name>
+      <message>
+        A voucher with the code OVjKBsu8 could not be found
+      </message>
+      <code>0</code>
+      <status>404</status>
+      <type>yii\web\NotFoundHttpException</type>
+    </response>
 
 Entities
 --
