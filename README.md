@@ -236,6 +236,8 @@ Example Responses
       <type>yii\web\NotFoundHttpException</type>
     </response>
 
+`vouchers/{code}`
+
 
 Entities
 --
