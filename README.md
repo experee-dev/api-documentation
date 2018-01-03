@@ -178,6 +178,8 @@ The response to this request will contain either, data relating to the product w
 
 Example Responses
 
+Successful
+
     <response>
       <ID>10000</ID>
       <name>Test Product Name</name>
@@ -228,6 +230,8 @@ Example Responses
       </media>
     </response>
 
+Unsuccesful
+
     <response>
       <name>Not Found</name>
       <message/>
@@ -262,6 +266,7 @@ Example Request
 The response to this request will contain either, data relating to the voucher with the unique identifier or, a 404 error if the unique identifier does not exist.
 
 Example Responses
+
 Successful
 
     <response>
