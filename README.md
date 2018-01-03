@@ -262,6 +262,7 @@ Example Request
 The response to this request will contain either, data relating to the voucher with the unique identifier or, a 404 error if the unique identifier does not exist.
 
 Example Responses
+Successful
 
     <response>
       <voucher_code>OVjKBsuMN8</voucher_code>
@@ -272,6 +273,8 @@ Example Responses
         https://www.experee.com/united-kingdom/edinburgh/tours/descent-and-discover-edinburgh-self-guided-tour
       </permalink>
     </response>
+
+Unsuccessful
 
     <response>
       <name>Not Found</name>
