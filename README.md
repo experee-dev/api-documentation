@@ -237,7 +237,14 @@ Example Responses
     </response>
 
 `POST` `/vouchers`
+--
+Create a new voucher on the Experee.com system.
 
+Manadatory POST arguments
+
+- `productID` (`Integer`) The ID of the product this voucher is for.
+
+Posting a json object with a valid productID to this endpoint will create and return a new voucher.
 
 
 `GET` `/vouchers/{code}`
