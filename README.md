@@ -56,7 +56,7 @@ A response to a successful request to a 'list entities' (eg Products) style endp
 
 Available Endpoints
 --
-`/products`
+`GET` `/products`
 --
 
 List products, get data for a predetermined number of products from the Experee catalogue. The response from this endpoint can be paginated and (optionally) filtered by country and vary in the number of results returned.
@@ -163,7 +163,7 @@ Example Response
 
 
 
-`/products/{id}`
+`GET` `/products/{id}`
 --
 Get data for a single product.
 
@@ -236,8 +236,36 @@ Example Responses
       <type>yii\web\NotFoundHttpException</type>
     </response>
 
-`vouchers/{code}`
+`POST` `/vouchers`
+
+
+
+`GET` `/vouchers/{code}`
 --
+Get details about a specific voucher.
+
+Mandatory GET Arguments
+
+- `code` - an alphanumeric unique voucher code.
+
+Example Request
+
+- https://api.experee.com/v2/vouchers/abc123?access-token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+The response to this request will contain either, data relating to the voucher with the unique identifier or, a 404 error if the unique identifier does not exist.
+
+Example Responses
+
+    <response>
+      <voucher_code>OVjKBsuMN8</voucher_code>
+      <expiry_date>1546521797</expiry_date>
+      <redeemed>false</redeemed>
+      <product>Descent and Discover Edinburgh, Self Guided Tour</product>
+      <permalink>
+        http://experee-yii.gexp/united-kingdom/edinburgh/tours/descent-and-discover-edinburgh-self-guided-tour
+      </permalink>
+    </response>
+
 
 Entities
 --
@@ -278,10 +306,20 @@ the `product_duration` entity consists of the following attributes.
 
 `Location`
 
-The `location` consists of the following attributes.
+The `location` entity consists of the following attributes.
 
 - `timezone` (`String`) The name of the [timezone](https://en.wikipedia.org/wiki/Tz_database) the product is situated in, in the form `Area/Location`, for example `Europe/London`.
 - `latitude` (`Float`) The latitude of the product.
 - `longitude` (`Float`) The longitude of the product.
 - `town_city` (`String`) The name of the town or city the product is situated in.
 - `country` (`String`) The [ISO two-letter country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) of the country the product is situated in.
+
+`Voucher`
+
+The `voucher` entity consists of the following attributes.
+- `voucher_code` (`String`) The voucher code to be entered during checkout.
+- `expiry_date` (`Integer`) The unix timestamp for when this voucher will expire.
+- `valid` (`String`) (`true` or `false`) Whether or not this voucher has expired or not.
+- `redeemed` (`String`) (`true` or `false`) Whether or not this voucher has been used before.
+- `product` (`String`) The name of the product this voucher is valid for.
+- `permalink` (`String`) The premalink to the product on Experee.com this voucher is for.
