@@ -64,7 +64,7 @@ List products, get data for a predetermined number of products from the Experee 
 Optional GET Arguments
 
 - `country` - the two character iso country code to filter results.
-- `town-city` - the name of a town or city to filter results.
+- `town-city` - the name of a town or city to filter results. Use of this filter also requires of the `country` filter (see above).
 - `per-page` - an integer dictating how many products should be returned in response to this request (max 50 items, default 20 items).
 - `page` - an integer dictating which page of paginated results should be returned in response to this request.
 
