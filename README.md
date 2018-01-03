@@ -237,7 +237,7 @@ Example Responses
     </response>
 
 `vouchers/{code}`
-
+--
 
 Entities
 --
