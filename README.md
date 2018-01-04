@@ -89,7 +89,7 @@ Example Response
               <advertised_tier>true</advertised_tier>
               <price_as_decimal>199.00</price_as_decimal>
               <currency>GBP</currency>
-              <price_string>£199.00</price_string>
+              <display_price>£199.00</display_price>
             </item>
             <item>
               <tier_name>Child</tier_name>
@@ -97,7 +97,7 @@ Example Response
               <advertised_tier>false</advertised_tier>
               <price_as_decimal>149.00</price_as_decimal>
               <currency>GBP</currency>
-              <price_string>£149.00</price_string>
+              <display_price>£149.00</display_price>
               <description>Special child price</description>
               <from_age>4</from_age>
               <to_age>16</to_age>
@@ -194,7 +194,7 @@ Successful
           <advertised_tier>true</advertised_tier>
           <price_as_decimal>199.00</price_as_decimal>
           <currency>GBP</currency>
-          <price_string>£199.00</price_string>
+          <display_price>£199.00</display_price>
         </item>
         <item>
           <tier_name>Child</tier_name>
@@ -202,7 +202,7 @@ Successful
           <advertised_tier>false</advertised_tier>
           <price_as_decimal>149.00</price_as_decimal>
           <currency>GBP</currency>
-          <price_string>£149.00</price_string>
+          <display_price>£149.00</display_price>
           <description>Special child price</description>
           <from_age>4</from_age>
           <to_age>16</to_age>
@@ -317,7 +317,7 @@ The `prices` field is made up of one or more `price` entities, grouped together 
 - `advertised_tier` (`String`) (`true` or `fale`) Should this tier be used in calculating 'from price'?
 - `price_as_decimal` (`Float`) The numerical representation of the price for this pricing tier. Useful for calculation of multiple purchases etc.
 - `currency` (`String`) The [ISO currency code](https://en.wikipedia.org/wiki/ISO_4217) for the currency this pricing tier is baselined in.
-- `price_string` (`String`) A representation of the symbol of the currency this pricing tier is baselined in and the numerical part of this pricing tier. Useful for display purposes.
+- `display_price` (`String`) A representation of the symbol of the currency this pricing tier is baselined in and the numerical part of this pricing tier. Useful for display purposes.
 - `description` (`String` - optional) A more detailed description of this pricing tier. May include restrictions according to age etc.
 - `from_age` (`Integer` - optional) A lower limit for age restrictions for this pricing tier.
 - `to_age` (`Integer` - optional) An upper limit for age restrictions for this pricing tier.
