@@ -37,7 +37,7 @@ If you receive a response like this, you must wait until your request allowance 
 
 Other Response Fields
 --
-A response to a successful request to a 'list entities' (eg Products) style endpoint will also include a _meta field which contains meta data about the type of entity being queried.
+A response to a successful request to a 'list entities' (eg Products) style endpoint will also include a `_meta` field which contains meta data about the type of entity being queried.
 
 `_meta`
  - `totalCount` - the total number of this type of entity (with any optional filters applied) in the experee system.
@@ -45,7 +45,7 @@ A response to a successful request to a 'list entities' (eg Products) style endp
  - `currentPage` - the number of the 'page' of data returned in response to this request.
  - `perPage` - the number of items returned in reponse to this request.
 
- A response to a successful request to a 'list entities' style endpoint will also include a _links field which contains a set of hyperlinks which, in relation to HATEOAS, contain information which allow clients to discover actions supported.
+ A response to a successful request to a 'list entities' style endpoint will also include a `_links` field which contains a set of hyperlinks which, in relation to [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS), contain information which allow clients to discover actions supported.
 
  `_links`
   - `self` - A url to the page of data which has been returned in response to this request.
