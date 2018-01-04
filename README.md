@@ -5,7 +5,7 @@ The base url for all requests is https://api.experee.com/v2 and data received in
 
 Mandatory Arguments
 --
-`access-token`. The value of this argument should be the access token you were provided when api access was granted. This should be passed to every request in the form of a GET argument, for example
+- `access-token`. The value of this argument should be the access token you were provided when api access was granted. This should be passed to every request in the form of a `GET` argument by appending to the request url, for example
 
 https://api.experee.com/v2/endpoint?access-token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
@@ -23,7 +23,7 @@ If you receive a response like this, please double check your access-token match
 
 Request Rate Limiting
 --
-Requests are limited to 4 per second. if your application exceeds this limit the response you receive will have a `status` field with the status code `429`.
+Requests are limited to 4 per second. If your application exceeds this limit the response you receive will have a `status` field with the status code `429`.
 
 If you receive a response like this, you must wait until your request allowance is again sufficient and then re-make your request.
 
@@ -37,7 +37,7 @@ If you receive a response like this, you must wait until your request allowance 
 
 Other Response Fields
 --
-A response to a successful request to a 'list entities' (eg Products) style endpoint will also include a `_meta` field which contains meta data about the type of entity being queried.
+A response to a successful request to a 'list entities' (eg `/products`) style endpoint will also include a `_meta` field which contains meta data about the type of entity being queried.
 
 `_meta`
  - `totalCount` - the total number of this type of entity (with any optional filters applied) in the experee system.
@@ -59,14 +59,14 @@ Available Endpoints
 `GET` `/products`
 --
 
-List products, get data for a predetermined number of products from the Experee catalogue. The response from this endpoint can be paginated and (optionally) filtered by country and vary in the number of results returned.
+List products, get data for a predetermined number of products from the Experee catalogue. The response from this endpoint can be paginated and (optionally) filtered by country and town/city and vary in the number of results returned.
 
 Optional GET Arguments
 
-- `country` - the two character iso country code to filter results.
-- `town-city` - the name of a town or city to filter results. Use of this filter also requires of the `country` filter (see above).
-- `per-page` - an integer dictating how many products should be returned in response to this request (max 50 items, default 20 items).
-- `page` - an integer dictating which page of paginated results should be returned in response to this request.
+- `country` - [ISO two-letter country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) to filter results.
+- `town-city` - The name of a town or city to filter results. Use of this filter also requires of the `country` filter (see above).
+- `per-page` - An integer dictating how many products should be returned in response to this request (max 50 items, default 20 items).
+- `page` - An integer dictating which page of paginated results should be returned in response to this request.
 
 
 Example Request
@@ -336,7 +336,8 @@ The `location` entity consists of the following attributes.
 - `latitude` (`Float`) The latitude of the product.
 - `longitude` (`Float`) The longitude of the product.
 - `town_city` (`String`) The name of the town or city the product is situated in.
-- `country` (`String`) The [ISO two-letter country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) of the country the product is situated in.
+- `country_code` (`String`) The [ISO two-letter country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) of the country the product is situated in.
+- `country` (`String`) The full name of the country the product is situated in.
 
 `Voucher`
 
