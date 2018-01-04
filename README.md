@@ -5,7 +5,7 @@ The base url for all requests is https://api.experee.com/v2 and data received in
 
 Mandatory Arguments
 --
-- `access-token`. The value of this argument should be the access token you were provided when api access was granted. This should be passed to every request in the form of a `GET` argument by appending to the request url, for example
+- `access-token`. The value of this argument should be the access token you were provided when api access was granted. This should be passed to every request in the form of a `GET` argument by appending a key/value pair to the request url, for example
 
 https://api.experee.com/v2/endpoint?access-token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
