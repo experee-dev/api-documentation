@@ -107,7 +107,7 @@ Example Response
             <unit>seconds</unit>
             <duration>4200</duration>
           </product_duration>
-          <permalink>//www.experee.com/united-kingdom/edinburgh/edinburgh-ghost-tour</permalink>
+          <permalink>https://www.experee.com/united-kingdom/edinburgh/edinburgh-ghost-tour</permalink>
           <last_updated>1448381328</last_updated>
           <location>
             <timezone>Europe/London</timezone>
@@ -117,11 +117,11 @@ Example Response
             <country>GB</country>
           </location>
           <media>
-            <item>//www.experee.com/media/EileanDonanCastle1.jpg</item>
-            <item>//www.experee.com/media/Cuillin-Mountains.jpg</item>
-            <item>//www.experee.com/media/Urquhart-Castle1.jpg</item>
-            <item>//www.experee.com/media/cullodenstock1.jpg</item>
-            <item>//www.experee.com/media/WhiskyTasting.jpg</item>
+            <item>https://www.experee.com/media/EileanDonanCastle1.jpg</item>
+            <item>https://www.experee.com/media/Cuillin-Mountains.jpg</item>
+            <item>https://www.experee.com/media/Urquhart-Castle1.jpg</item>
+            <item>https://www.experee.com/media/cullodenstock1.jpg</item>
+            <item>https://www.experee.com/media/WhiskyTasting.jpg</item>
           </media>
         </item>
         <item>... <!-- further products ommited for brevity --></item>
@@ -129,27 +129,27 @@ Example Response
       <_links>
         <self>
           <href>
-            http://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=08f12b40a924004d48628abb079b1e8d194cc9bb&country=GB&page=3
+            https://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=08f12b40a924004d48628abb079b1e8d194cc9bb&country=GB&page=3
           </href>
         </self>
         <first>
           <href>
-            http://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=08f12b40a924004d48628abb079b1e8d194cc9bb&country=GB&page=1
+            https://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=08f12b40a924004d48628abb079b1e8d194cc9bb&country=GB&page=1
           </href>
         </first>
         <prev>
           <href>
-            http://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=08f12b40a924004d48628abb079b1e8d194cc9bb&country=GB&page=2
+            https://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=08f12b40a924004d48628abb079b1e8d194cc9bb&country=GB&page=2
           </href>
         </prev>
         <next>
           <href>
-            http://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=08f12b40a924004d48628abb079b1e8d194cc9bb&country=GB&page=4
+            https://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=08f12b40a924004d48628abb079b1e8d194cc9bb&country=GB&page=4
           </href>
         </next>
         <last>
           <href>
-            http://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=08f12b40a924004d48628abb079b1e8d194cc9bb&country=GB&page=83
+            https://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=08f12b40a924004d48628abb079b1e8d194cc9bb&country=GB&page=83
           </href>
         </last>
       </_links>
@@ -212,7 +212,7 @@ Successful
         <unit>seconds</unit>
         <duration>4200</duration>
       </product_duration>
-      <permalink>//www.experee.com/united-kingdom/edinburgh/edinburgh-ghost-tour</permalink>
+      <permalink>https://www.experee.com/united-kingdom/edinburgh/edinburgh-ghost-tour</permalink>
       <last_updated>1448381328</last_updated>
       <location>
         <timezone>Europe/London</timezone>
@@ -222,11 +222,11 @@ Successful
         <country>GB</country>
       </location>
       <media>
-        <item>//www.experee.com/media/EileanDonanCastle1.jpg</item>
-        <item>//www.experee.com/media/Cuillin-Mountains.jpg</item>
-        <item>//www.experee.com/media/Urquhart-Castle1.jpg</item>
-        <item>//www.experee.com/media/cullodenstock1.jpg</item>
-        <item>//www.experee.com/media/WhiskyTasting.jpg</item>
+        <item>https://www.experee.com/media/EileanDonanCastle1.jpg</item>
+        <item>https://www.experee.com/media/Cuillin-Mountains.jpg</item>
+        <item>https://www.experee.com/media/Urquhart-Castle1.jpg</item>
+        <item>https://www.experee.com/media/cullodenstock1.jpg</item>
+        <item>https://www.experee.com/media/WhiskyTasting.jpg</item>
       </media>
     </response>
 
