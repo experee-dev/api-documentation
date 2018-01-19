@@ -129,27 +129,27 @@ Example Response
       <_links>
         <self>
           <href>
-            https://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=08f12b40a924004d48628abb079b1e8d194cc9bb&country=GB&page=3
+            https://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=xxxxxxxxxxxxxxx&country=GB&page=3
           </href>
         </self>
         <first>
           <href>
-            https://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=08f12b40a924004d48628abb079b1e8d194cc9bb&country=GB&page=1
+            https://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=xxxxxxxxxxxxxxx&country=GB&page=1
           </href>
         </first>
         <prev>
           <href>
-            https://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=08f12b40a924004d48628abb079b1e8d194cc9bb&country=GB&page=2
+            https://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=xxxxxxxxxxxxxxx&country=GB&page=2
           </href>
         </prev>
         <next>
           <href>
-            https://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=08f12b40a924004d48628abb079b1e8d194cc9bb&country=GB&page=4
+            https://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=xxxxxxxxxxxxxxx&country=GB&page=4
           </href>
         </next>
         <last>
           <href>
-            https://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=08f12b40a924004d48628abb079b1e8d194cc9bb&country=GB&page=83
+            https://api.experee.com/v2/products?q=%2Fv2%2Fproducts&access-token=xxxxxxxxxxxxxxx&country=GB&page=83
           </href>
         </last>
       </_links>
