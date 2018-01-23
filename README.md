@@ -84,6 +84,7 @@ Example Response
           <description>Description of product. Can potentially contain html.</description>
           <prices>
             <item>
+              <ID>101</ID>
               <tier_name>Adult</tier_name>
               <guests>1</guests>
               <advertised_tier>true</advertised_tier>
@@ -92,6 +93,7 @@ Example Response
               <display_price>£199.00</display_price>
             </item>
             <item>
+              <ID>102</ID>
               <tier_name>Child</tier_name>
               <guests>1</guests>
               <advertised_tier>false</advertised_tier>
@@ -189,6 +191,7 @@ Successful
       <fact3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</fact3>
       <prices>
         <item>
+          <ID>101</ID>
           <tier_name>Adult</tier_name>
           <guests>1</guests>
           <advertised_tier>true</advertised_tier>
@@ -197,6 +200,7 @@ Successful
           <display_price>£199.00</display_price>
         </item>
         <item>
+          <ID>102</ID>
           <tier_name>Child</tier_name>
           <guests>1</guests>
           <advertised_tier>false</advertised_tier>
@@ -247,8 +251,19 @@ Create a new voucher on the Experee.com system.
 Manadatory POST arguments
 
 - `productID` (`Integer`) The ID of the product this voucher is for.
+- `prices` (`Array`) A map from pricing tier ID to quantity of pricing tier required for voucher.
 
-Posting a json object with a valid productID to this endpoint will create and return a new voucher.
+eg. 
+
+    {
+        'productID': 100,
+        'prices': {
+            '101' => 1,
+            '102 => 2
+        }
+    }
+
+Posting a json object with a valid productID and appropriate prices object to this endpoint will create and return a new voucher.
 
 
 `GET` `/vouchers/{code}`
